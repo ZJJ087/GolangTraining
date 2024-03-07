@@ -6,11 +6,14 @@ import (
 )
 
 var wg sync.WaitGroup
+var wg1 sync.WaitGroup
 
 func main() {
 	wg.Add(2)
+	// 多线程
 	go foo()
 	go bar()
+	// wg.Wait()会阻塞，直到wg中counter为0
 	wg.Wait()
 }
 

@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 串行执行
 func main() {
 	foo()
 	bar()
